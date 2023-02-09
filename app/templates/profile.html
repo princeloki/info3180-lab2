@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>Profile</h1>
+    <div class="card">
+            <div class="top-half">
+                <img class="profile-img" src="{{url_for('static', filename='profile_img.JPG')}}" alt="Profile Picture">
+                <h2 class="full-name">Teriq Strachan</h2>
+                <p>@Loki512</p>
+                <p>Tokyo, Japan</p>
+                <p>{{ current_date }}</p>
+            </div>
+            <div class="bottom-half">
+                <p class="about">
+                    I am a talented young man who loves to build things and has 
+                    a keen interest in all things Japan. Contact me if you'd like to work
+                    together on a new project.
+                </p>
+                <div class="stats">
+                    <div class="stat-box">
+                        <p class="figure">7</p>
+                        <p>Posts</p>
+                    </div>
+                    <div class="stat-box">
+                        <p class="figure">100</p>
+                        <p>Following</p>
+                    </div>
+                    <div class="stat-box">
+                        <p class="figure">250</p>
+                        <p>Followers</p>
+                    </div>
+                </div>
+                <button>Follow</button>
+            </div>
+    </div>
+{%  endblock %}
